@@ -35,7 +35,8 @@ Why build this? As a junior developer , I wanted a simple tool to quantify produ
 For testing: Run short sessions, check consoles for errors, or simulate weeks by editing dates in localStorage (Inspect > Application).
 
 ## Deployment
-Hosted on GitHub Pages/Netlify? Access at [your-deployed-url] (e.g., https://yourusername.github.io/devflow-app). Deploy steps:
+ Access at https://katlego-codes.github.io/devflow-app).
+ Deploy steps:
 - Push to GitHub.
 - Settings > Pages > Source: main/root.
 
@@ -49,6 +50,6 @@ Hosted on GitHub Pages/Netlify? Access at [your-deployed-url] (e.g., https://you
 Fork the repo, make changes, and PR! Issues welcome for bugs or ideas.
 
 ## License
-MIT License—free to use/modify.
+No Licence
 
-Built by Big in Johannesburg. Feedback? Connect on LinkedIn! 🚀     
+Built by Katlego in Johannesburg. Feedback? Connect on LinkedIn! 🚀     
