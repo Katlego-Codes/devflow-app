@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFlow - Developer Productivity & Focus Tracker</title>
+    <link rel="stylesheet" href="stlyle.css">
+</head>
+<body>
+    <h1>DevFlow</h1>
+    <div class="container">
+        <div class="section" id="tracker">
+            <h2>Focus Session Tracker</h2>
+            <input type="text" id="session-label" placeholder="Session Label">
+            <button id="start-btn">Start Focus</button>
+            <button id="stop-btn" disabled>Stop Focus</button>
+            <div id="timer">00:00:00</div>
+            <button id="switch-btn" disabled>I Switched Tasks</button>
+            <div id="switches">Task Switches: 0</div>
+            <div id="warning" class="warning"></div>
+        </div>
+        <div class="section" id="dashboard">
+            <h2>Daily Summary</h2>
+            <div id="summary"></div>
+            <button id="reset-btn">Reset Daily Data</button>
+        </div>
+        <div class="section" id="weekly-report">
+            <h2>Weekly Report</h2>
+            <div id="weekly-summary"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
