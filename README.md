@@ -52,4 +52,4 @@ Fork the repo, make changes, and PR! Issues welcome for bugs or ideas.
 ## License
 No Licence
 
-Built by Katlego in Johannesburg. Feedback? Connect on LinkedIn! 🚀     
+Built by Mpho (Katlego) in Johannesburg. Feedback? Connect on LinkedIn! 🚀     
