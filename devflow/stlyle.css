@@ -105,15 +105,16 @@ button:disabled {
 }
 #summary {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 100%));
     gap: 16px;
 }
 .summary-item {
     background: rgba(17, 24, 39, 0.8);
-    padding: 16px;
+    padding: 12px;
     border-radius: 12px;
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.05);
+    min-width: 0;
 }
 .summary-item p:first-child {
     font-size: 0.875em;
@@ -123,6 +124,9 @@ button:disabled {
 .summary-item p:nth-child(2) {
     font-size: 1.5em;
     font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .summary-progress {
     background-color: rgba(55, 65, 81, 0.8);
@@ -137,9 +141,12 @@ button:disabled {
     transition: width 0.3s ease;
 }
 .summary-warning {
-    grid-column: span 2;
+    grid-column: span 1;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #reset-btn {
@@ -169,4 +176,16 @@ button:disabled {
 .weekly-item p:nth-child(2) {
     font-size: 1.25em;
     font-weight: 500;
+
+}
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+    #timer {
+        font-size: 2.4em;
+    }
 }
