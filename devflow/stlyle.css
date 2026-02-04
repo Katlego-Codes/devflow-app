@@ -105,7 +105,7 @@ button:disabled {
 }
 #summary {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 100%));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 16px;
 }
 .summary-item {
@@ -115,6 +115,7 @@ button:disabled {
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.05);
     min-width: 0;
+    overflow: hidden;
 }
 .summary-item p:first-child {
     font-size: 0.875em;
@@ -147,6 +148,8 @@ button:disabled {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    max-width: 100%;
+    padding 0 8px;
 }
 
 #reset-btn {
@@ -180,7 +183,7 @@ button:disabled {
 }
 @media (max-width: 480px) {
     body {
-        padding: 12px;
+        padding: 10px 12px;
     }
     h1 {
         font-size: 2.2em;
@@ -188,4 +191,16 @@ button:disabled {
     #timer {
         font-size: 2.4em;
     }
+    .section {
+        padding: 16px;
+
+    }
+    .summary-warning {
+        font-size: 0.95em;
+    }
+    .summary-item {
+        padding: 12px;
+    }
+    
 }
+
